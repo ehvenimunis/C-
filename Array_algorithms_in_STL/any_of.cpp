@@ -1,0 +1,31 @@
+/*
+    Bu işlev, işlevde belirtilen belirli bir özelliği karşılayan bir öğe 
+    olup olmadığını kontrol eder. En az bir öğe özelliği karşılarsa, 
+    true değerini döndürür, aksi takdirde false döndürür.
+*/
+
+// C++ code to demonstrate working of any_of() 
+#include<iostream> 
+#include<algorithm> // for any_of() 
+using namespace std; 
+int main() 
+{ 
+	// Initializing array 
+	int ar[6] = {1, 2, 3, 4, 5, -6}; 
+
+	// Checking if any element is negative 
+	any_of(ar, ar+6, [](int x){ return x<0; })? 
+		cout << "There exists a negative element" : 
+		cout << "All are positive elements"; 
+
+	return 0; 
+
+} 
+
+
+/*
+
+    Output:
+
+    There exists a negative element
+*/
