@@ -48,13 +48,13 @@ int main()
 
 /*
 
-Output
+Output:
 
-Vector is: 10 20 5 23 42 15 
-Vector after sorting is: 5 10 15 20 23 42 
-Vector after reversing is: 42 23 20 15 10 5 
-Maximum element of vector is: 42
-Minimum element of vector is: 5
-The summation of vector elements is: 115
+	Vector is: 10 20 5 23 42 15 
+	Vector after sorting is: 5 10 15 20 23 42 
+	Vector after reversing is: 42 23 20 15 10 5 
+	Maximum element of vector is: 42
+	Minimum element of vector is: 5
+	The summation of vector elements is: 115
 
 */
