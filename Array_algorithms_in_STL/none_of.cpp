@@ -1,6 +1,7 @@
 // C++ code to demonstrate working of none_of() 
 #include<iostream> 
 #include<algorithm> // for none_of() 
+
 using namespace std; 
 int main() 
 { 
