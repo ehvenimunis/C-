@@ -1,0 +1,1 @@
+İteratörler, STL konteynerlerinin bellek adreslerine işaret etmek için kullanılır. 
