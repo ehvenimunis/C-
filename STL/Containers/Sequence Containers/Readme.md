@@ -36,8 +36,8 @@
     Çift bağlantılı listeler, içerdikleri öğelerin her birini farklı ve ilgisiz 
     depolama konumlarında saklayabilir. 
     Forward_list'e çok benzerler: Temel fark, forward_list nesnelerinin tek bağlantılı
-     listeler olması ve bu nedenle, biraz daha küçük ve daha verimli olmaları karşılığında 
-     yalnızca ileriye doğru yinelenebilmeleridir.
+    listeler olması ve bu nedenle, biraz daha küçük ve daha verimli olmaları karşılığında 
+    yalnızca ileriye doğru yinelenebilmeleridir.
     Diğer temel standart sıra kapları (array, vector ve deque) ile karşılaştırıldığında, 
     listeler genellikle bir iteratörün zaten elde edilmiş olduğu kap içindeki herhangi 
     bir konuma eleman ekleme, çıkarma ve hareket ettirmede ve dolayısıyla yoğun kullanım 
@@ -52,6 +52,24 @@
     listeleri için önemli bir faktör olabilir).
 
    ## deque : 
+
+   Yapısı vektör yapısına benzer, vektörden farkı hem önüne hemde sonuna 
+   veri eklenebiliyor ve alınabiliyor olmasıdır. Ancak, vektörlerin aksine, dekorların 
+   tüm öğelerini bitişik depolama konumlarında saklaması garanti edilmez: bir 
+   göstericideki öğelere bir işaretçiyi başka bir öğeye kaydırarak erişmek tanımsız 
+   davranışa neden olur. deque (genellikle "deck" olarak okunur), 
+   çift uçlu kuyruğun düzensiz bir kısaltmasıdır. Çift uçlu kuyruklar, her iki ucunda 
+   da (önünde veya arkasında) genişletilebilen veya daraltılabilen dinamik boyutlara 
+   sahip sequence containers'lardır.
+
+   Öğelerin başlangıç ​​veya son dışındaki konumlarda sık sık eklenmesini veya 
+   kaldırılmasını içeren işlemler için, deque daha kötü performans gösterir 
+   ve listelerden ve forward listelerden daha az tutarlı iteratörler 
+   ve referanslara sahiptir.
+    
+   Ortaya ekleme veya ortadan silme işlemi yavaştır
+   Ekleme ve silme işlemlerinin genellikle uçtan yapılmadığı durumlarda list ve 
+   forward list’ler deque’lere göre daha iyi performans gösterecektir.
 
    ## arrays : 
 
