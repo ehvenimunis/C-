@@ -1,11 +1,12 @@
- # Sequence Containers: sıralı bir şekilde erişilebilen veri yapılarını uygular. yani verilere sırayla erişilir. 
+ # Sequence Containers: 
+   Sıralı bir şekilde erişilebilen veri yapılarını uygular. yani verilere sırayla erişilir. 
 
 
-    # vector : 
+   ## vector : 
 
     Vektörler, bir öğe eklendiğinde veya silindiğinde kendini otomatik olarak yeniden boyutlandırma yeteneğine sahip dinamik dizilerle aynıdır ve depoları container tarafından otomatik olarak işlenir. Dinamik boyutlu dizi taşıyıcısıdır. Performansı en yüksek olan taşıyıcıdır. Vektör öğeleri, iteratörler kullanılarak erişilebilmeleri ve geçilebilmeleri için bitişik depolamaya yerleştirilir. Vektörlerde veriler sona eklenir. Sonunda ekleme, bazen diziyi genişletme ihtiyacı olabileceğinden farklı zaman alır. Son elemanın kaldırılması yalnızca sabit bir zaman alır çünkü yeniden boyutlandırma olmaz. Başlangıçta veya ortada ekleme ve silme zamanla doğrusaldır.
 
-    # list : 
+   ## list : 
 
     Listeler, bitişik olmayan bellek tahsisine izin veren sıralı konteynırlardır. Veriler çift bağlantılı liste halinde saklanır. Verilere arişmek için liste başından başlamak gerekir. Vektöre kıyasla listenin geçişi yavaştır, ancak bir konum bulunduğunda, ekleme ve silme hızlıdır. Normalde bir Liste dediğimizde, çift bağlantılı listeden söz ederiz. Tekil bağlantılı bir liste uygulamak için forward_list kullanıyoruz. 
     Çift bağlantılı listeler, içerdikleri öğelerin her birini farklı ve ilgisiz depolama konumlarında saklayabilir. 
@@ -17,9 +18,9 @@
  
 
 
-    # deque : 
+   ## deque : 
 
-    # arrays : 
+   ## arrays : 
 
-    # forward_list( Introduced in C++11) : 
+   ## forward_list( Introduced in C++11) : 
 
