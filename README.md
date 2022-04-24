@@ -1,5 +1,5 @@
-# Açıklama
+# C++ Algorithm
 
-A* algoritması incelendi. 
-STL ile alakalı örnek çalışmalar yapıldı. Her bir C++ dosyasında çıktıları kodun sonunda vermeye çalıştım. 
+The A* algorithm was examined.
+Sample studies related to STL were made.
 
