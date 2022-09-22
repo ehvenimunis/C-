@@ -52,75 +52,75 @@
 
    ## deque : 
 
-   Yapısı vektör yapısına benzer, vektörden farkı hem önüne hemde sonuna 
-   veri eklenebiliyor ve alınabiliyor olmasıdır. Ancak, vektörlerin aksine, dekorların 
-   tüm öğelerini bitişik depolama konumlarında saklaması garanti edilmez: bir 
-   göstericideki öğelere bir işaretçiyi başka bir öğeye kaydırarak erişmek tanımsız 
-   davranışa neden olur. deque (genellikle "deck" olarak okunur), 
-   çift uçlu kuyruğun düzensiz bir kısaltmasıdır. Çift uçlu kuyruklar, her iki ucunda 
-   da (önünde veya arkasında) genişletilebilen veya daraltılabilen dinamik boyutlara 
-   sahip sequence containers'lardır.
+    Yapısı vektör yapısına benzer, vektörden farkı hem önüne hemde sonuna 
+    veri eklenebiliyor ve alınabiliyor olmasıdır. Ancak, vektörlerin aksine, dekorların 
+    tüm öğelerini bitişik depolama konumlarında saklaması garanti edilmez: bir 
+    göstericideki öğelere bir işaretçiyi başka bir öğeye kaydırarak erişmek tanımsız 
+    davranışa neden olur. deque (genellikle "deck" olarak okunur), 
+    çift uçlu kuyruğun düzensiz bir kısaltmasıdır. Çift uçlu kuyruklar, her iki ucunda 
+    da (önünde veya arkasında) genişletilebilen veya daraltılabilen dinamik boyutlara 
+    sahip sequence containers'lardır.
 
-   Öğelerin başlangıç ​​veya son dışındaki konumlarda sık sık eklenmesini veya 
-   kaldırılmasını içeren işlemler için, deque daha kötü performans gösterir 
-   ve listelerden ve forward listelerden daha az tutarlı iteratörler 
-   ve referanslara sahiptir.
-    
-   Ortaya ekleme veya ortadan silme işlemi yavaştır
-   Ekleme ve silme işlemlerinin genellikle uçtan yapılmadığı durumlarda list ve 
-   forward list’ler deque’lere göre daha iyi performans gösterecektir.
+    Öğelerin başlangıç ​​veya son dışındaki konumlarda sık sık eklenmesini veya 
+    kaldırılmasını içeren işlemler için, deque daha kötü performans gösterir 
+    ve listelerden ve forward listelerden daha az tutarlı iteratörler 
+    ve referanslara sahiptir.
+
+    Ortaya ekleme veya ortadan silme işlemi yavaştır
+    Ekleme ve silme işlemlerinin genellikle uçtan yapılmadığı durumlarda list ve 
+    forward list’ler deque’lere göre daha iyi performans gösterecektir.
 
    ## arrays : 
 
-   Sabit bouytlu dizi taşıyıcısıdır. Kliasik tanımından farklı olarak dizi boyutu, dizi 
-   doldurma ve STL içerisindeki algortimalarda kullanmaya izin verir. 
+    Sabit bouytlu dizi taşıyıcısıdır. Kliasik tanımından farklı olarak dizi boyutu, dizi 
+    doldurma ve STL içerisindeki algortimalarda kullanmaya izin verir. 
 
-   Dizi sınıfları kendi boyutunu bilir, oysa C tarzı dizilerde bu özellik yoktur. 
-   Dolayısıyla işlevlere geçerken, Array boyutunu ayrı bir parametre olarak geçirmemize gerek yoktur.
-   Dizi sınıfları genellikle C tarzı dizilerden daha verimli, hafif ve güvenilirdir.
-   Diğer standart kaplardan farklı olarak, diziler sabit bir boyuta sahiptir ve bir 
-   ayırıcı aracılığıyla elemanlarının tahsisini yönetmezler: sabit boyutlu bir eleman 
-   dizisini kapsayan bir toplu tiptirler. Bu nedenle, dinamik olarak genişletilemez 
-   veya daraltılamazlar (genişletilebilen benzer bir kap için vektöre bakın).
+    Dizi sınıfları kendi boyutunu bilir, oysa C tarzı dizilerde bu özellik yoktur. 
+    Dolayısıyla işlevlere geçerken, Array boyutunu ayrı bir parametre olarak geçirmemize gerek yoktur.
+    Dizi sınıfları genellikle C tarzı dizilerden daha verimli, hafif ve güvenilirdir.
+    Diğer standart kaplardan farklı olarak, diziler sabit bir boyuta sahiptir ve bir 
+    ayırıcı aracılığıyla elemanlarının tahsisini yönetmezler: sabit boyutlu bir eleman 
+    dizisini kapsayan bir toplu tiptirler. Bu nedenle, dinamik olarak genişletilemez 
+    veya daraltılamazlar (genişletilebilen benzer bir kap için vektöre bakın).
 
-   Sıfır boyutlu diziler geçerlidir, ancak bunlara referans verilmemelidir 
+    Sıfır boyutlu diziler geçerlidir, ancak bunlara referans verilmemelidir 
 
-   Dizi kaplarının diğer benzersiz özelliği, bunların demet nesneleri olarak ele alınabilmeleridir:
-   <array> başlığı, dizi öğelerine bir demetmiş gibi erişmek için get işlevini ve ayrıca özelleştirilmiş 
-   tuple_size ve tuple_element türlerini aşırı yükler.
+    Dizi kaplarının diğer benzersiz özelliği, bunların demet nesneleri olarak ele alınabilmeleridir:
+    <array> başlığı, dizi öğelerine bir demetmiş gibi erişmek için get işlevini ve ayrıca özelleştirilmiş 
+    tuple_size ve tuple_element türlerini aşırı yükler.
 
 
    ## forward_list( Introduced in C++11) : 
-   Veriler tek bağlantılı liste biçiminde saklanır. 
-   Veri taşıyıcının başına eklenir. Sıranın herhangi bir yerinde sabit zamanlı ekleme ve 
-   silme işlemlerine izin veren sıra kapsayıcılarıdır.
+    Veriler tek bağlantılı liste biçiminde saklanır. 
+    Veri taşıyıcının başına eklenir. Sıranın herhangi bir yerinde sabit zamanlı ekleme ve 
+    silme işlemlerine izin veren sıra kapsayıcılarıdır.
 
-   Tekil bağlantılı listeler, içerdikleri her bir öğeyi farklı ve ilgisiz depolama konumlarında 
-   saklayabilir. Sıra, sıradaki öğeye bir bağlantı ilişkilendirilerek tutulur.
+    Tekil bağlantılı listeler, içerdikleri her bir öğeyi farklı ve ilgisiz depolama konumlarında 
+    saklayabilir. Sıra, sıradaki öğeye bir bağlantı ilişkilendirilerek tutulur.
 
-   Bir forward_list kapsayıcısı ile bir liste kapsayıcısı arasındaki ana tasarım farkı, birincinin 
-   dahili olarak bir sonraki elemana bir bağlantı tutması ve ikincisinin eleman başına iki bağlantı 
-   tutmasıdır: biri sonraki elemana ve diğeri öncekine, verimli her iki yönde de yineleme, ancak öğe 
-   başına ek depolama alanı tüketir ve öğelerin eklenmesi ve çıkarılmasıyla biraz daha yüksek bir 
-   zamana sahiptir. forward_list nesneleri bu nedenle liste nesnelerinden daha etkilidir, ancak bunlar 
-   yalnızca ileriye doğru yinelenebilir.
+    Bir forward_list kapsayıcısı ile bir liste kapsayıcısı arasındaki ana tasarım farkı, birincinin 
+    dahili olarak bir sonraki elemana bir bağlantı tutması ve ikincisinin eleman başına iki bağlantı 
+    tutmasıdır: biri sonraki elemana ve diğeri öncekine, verimli her iki yönde de yineleme, ancak öğe 
+    başına ek depolama alanı tüketir ve öğelerin eklenmesi ve çıkarılmasıyla biraz daha yüksek bir 
+    zamana sahiptir. forward_list nesneleri bu nedenle liste nesnelerinden daha etkilidir, ancak bunlar 
+    yalnızca ileriye doğru yinelenebilir.
 
-   Diğer temel standart sıra kapsayıcıları (dizi, vektör ve deque) ile karşılaştırıldığında forward_list, 
-   elemanların kap içinde herhangi bir konuma eklenmesinde, çıkarılmasında ve taşınmasında ve dolayısıyla 
-   sıralama algoritmaları gibi bunları yoğun şekilde kullanan algoritmalarda genellikle daha iyi performans 
-   gösterir.
+    Diğer temel standart sıra kapsayıcıları (dizi, vektör ve deque) ile karşılaştırıldığında forward_list, 
+    elemanların kap içinde herhangi bir konuma eklenmesinde, çıkarılmasında ve taşınmasında ve dolayısıyla 
+    sıralama algoritmaları gibi bunları yoğun şekilde kullanan algoritmalarda genellikle daha iyi performans 
+    gösterir.
 
-   Ana dezavantajı, konumlarına göre öğelere doğrudan erişimlerinin olmamasıdır; Örneğin, bir forward_list 
-   içinde altıncı öğeye erişmek için, bir kişinin başlangıçtan o konuma yinelemesi gerekir, bu da aralarındaki 
-   mesafede doğrusal zaman alır. Ayrıca, her bir öğeyle ilişkili bağlantı bilgilerini tutmak için fazladan 
-   bellek tüketirler (bu, küçük boyutlu öğelerin büyük listeleri için önemli bir faktör olabilir).
+    Ana dezavantajı, konumlarına göre öğelere doğrudan erişimlerinin olmamasıdır; Örneğin, bir forward_list 
+    içinde altıncı öğeye erişmek için, bir kişinin başlangıçtan o konuma yinelemesi gerekir, bu da aralarındaki 
+    mesafede doğrusal zaman alır. Ayrıca, her bir öğeyle ilişkili bağlantı bilgilerini tutmak için fazladan 
+    bellek tüketirler (bu, küçük boyutlu öğelerin büyük listeleri için önemli bir faktör olabilir).
 
-   Bir forward_list nesnesinin boyutunu elde etmek için, doğrusal zaman alan bir işlem olan başlangıç ​​ve 
-   bitişiyle uzaklık algoritmasını kullanabilirsiniz.
+    Bir forward_list nesnesinin boyutunu elde etmek için, doğrusal zaman alan bir işlem olan başlangıç ​​ve 
+    bitişiyle uzaklık algoritmasını kullanabilirsiniz.
 
-   Forward liste yalnızca sonraki öğenin konumunu takip ederken, list hem sonraki hem de önceki öğelerin kaydını 
-   tutması ve böylece her öğeyi depolamak için gereken depolama alanını artırması gerçeğiyle farklıdır. 
-   İleri listenin dezavantajı, geriye doğru yinelenememesi ve tek tek öğelerine doğrudan erişilememesidir.
+    Forward liste yalnızca sonraki öğenin konumunu takip ederken, list hem sonraki hem de önceki öğelerin kaydını 
+    tutması ve böylece her öğeyi depolamak için gereken depolama alanını artırması gerçeğiyle farklıdır. 
+    İleri listenin dezavantajı, geriye doğru yinelenememesi ve tek tek öğelerine doğrudan erişilememesidir.
 
    
 
