@@ -6,7 +6,8 @@
 
     Vektörler, bir öğe eklendiğinde veya silindiğinde kendini otomatik olarak 
     yeniden boyutlandırma yeteneğine sahip dinamik dizilerle aynıdır ve depoları 
-    container tarafından otomatik olarak işlenir. Dinamik boyutlu dizi taşıyıcısıdır. 
+    container tarafından otomatik olarak işlenir. Dinamik boyutlu dizi taşıyıcısıdır.
+    (Array ise sabit boyutlu dizi taşıyıcısıydı.)
     Performansı en yüksek olan taşıyıcıdır. Vektör öğeleri, iteratörler kullanılarak 
     erişilebilmeleri ve geçilebilmeleri için bitişik depolamaya yerleştirilir. 
     Vektörlerde veriler sona eklenir. Sonunda ekleme, bazen diziyi genişletme 
@@ -57,9 +58,11 @@
     tüm öğelerini bitişik depolama konumlarında saklaması garanti edilmez: bir 
     göstericideki öğelere bir işaretçiyi başka bir öğeye kaydırarak erişmek tanımsız 
     davranışa neden olur. deque (genellikle "deck" olarak okunur), 
-    çift uçlu kuyruğun düzensiz bir kısaltmasıdır. Çift uçlu kuyruklar, her iki ucunda 
-    da (önünde veya arkasında) genişletilebilen veya daraltılabilen dinamik boyutlara 
+    çift uçlu kuyruğun düzensiz bir kısaltmasıdır. Çift uçlu kuyruklar (double-ended queue), 
+    her iki ucunda da (önünde veya arkasında) genişletilebilen veya daraltılabilen dinamik boyutlara 
     sahip sequence containers'lardır.
+    
+    ![resim](https://user-images.githubusercontent.com/43637760/191761949-17c8ec94-9297-436e-99c4-7a34c9c3d80d.png)
 
     Öğelerin başlangıç ​​veya son dışındaki konumlarda sık sık eklenmesini veya 
     kaldırılmasını içeren işlemler için, deque daha kötü performans gösterir 
